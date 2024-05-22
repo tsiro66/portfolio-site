@@ -746,24 +746,32 @@ html {
   height: 400px;
 }
 
-.h-\[40vh\]{
-  height: 40vh;
-}
-
 .h-\[8vh\]{
   height: 8vh;
+}
+
+.w-44{
+  width: 11rem;
 }
 
 .w-96{
   width: 24rem;
 }
 
-.w-\[80vh\]{
-  width: 80vh;
-}
-
 .w-full{
   width: 100%;
+}
+
+.w-80{
+  width: 20rem;
+}
+
+.w-32{
+  width: 8rem;
+}
+
+.max-w-2xl{
+  max-width: 42rem;
 }
 
 .max-w-lg{
@@ -776,6 +784,10 @@ html {
 
 .max-w-screen-xl{
   max-width: 1280px;
+}
+
+.max-w-xl{
+  max-width: 36rem;
 }
 
 .cursor-default{
@@ -820,10 +832,20 @@ html {
   justify-content: space-around;
 }
 
+.space-y-10 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(2.5rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(2.5rem * var(--tw-space-y-reverse));
+}
+
 .space-y-8 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(2rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(2rem * var(--tw-space-y-reverse));
+}
+
+.overflow-x-hidden{
+  overflow-x: hidden;
 }
 
 .scroll-smooth{
@@ -898,6 +920,11 @@ html {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.object-contain{
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
 .p-10{
   padding: 2.5rem;
 }
@@ -914,8 +941,16 @@ html {
   padding: 0.75rem;
 }
 
+.p-5{
+  padding: 1.25rem;
+}
+
 .p-6{
   padding: 1.5rem;
+}
+
+.p-4{
+  padding: 1rem;
 }
 
 .px-4{
@@ -1118,9 +1153,9 @@ html {
     order: 0;
   }
 
-  .lg\:mx-32{
-    margin-left: 8rem;
-    margin-right: 8rem;
+  .lg\:my-0{
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   .lg\:mb-12{
@@ -1155,12 +1190,22 @@ html {
     height: 700px;
   }
 
+  .lg\:w-1\/2{
+    width: 50%;
+  }
+
   .lg\:grid-cols-3{
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
   .lg\:flex-row{
     flex-direction: row;
+  }
+
+  .lg\:space-x-10 > :not([hidden]) ~ :not([hidden]){
+    --tw-space-x-reverse: 0;
+    margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+    margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
   }
 
   .lg\:space-y-0 > :not([hidden]) ~ :not([hidden]){
@@ -1181,6 +1226,10 @@ html {
 }
 
 @media (min-width: 1280px){
+  .xl\:block{
+    display: block;
+  }
+
   .xl\:gap-10{
     gap: 2.5rem;
   }
