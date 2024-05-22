@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portofolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="font-body scroll-smooth">
+
+    <nav class="hidden lg:block select-none border-b border-white shadow-lg fixed top-0 w-full bg-white z-50">
+      <div class="flex text-2xl justify-around items-center h-[8vh]">
+      <div class="text-3xl cursor-default"><a href="#top">
+        My Portofolio
+      </a></div>
+      <!-- add active:text-blue-500 somehow -->
+      <ul>
+        <li class="list-none inline-block px-5 no-underline transition duration-300 ease-in-out hover:text-blue-500">
+          <a
+            href="#about"
+            >About</a
+          >
+        </li>
+        <li class="list-none inline-block px-5 no-underline transition duration-300 ease-in-out hover:text-blue-500">
+          <a
+            href="#experience"
+            >Experience</a
+          >
+        </li>
+        <li class="list-none inline-block px-5 no-underline transition duration-300 ease-in-out hover:text-blue-500">
+          <a
+            href="#projects"
+            >Projects</a
+          >
+        </li>
+        <li class="list-none inline-block px-5 no-underline transition duration-300 ease-in-out hover:text-blue-500">
+          <a
+            href="#contact"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+<!-- mobile navbar -->
+<nav class="lg:hidden select-none border-b border-white shadow-lg fixed top-0 w-full bg-white z-50">
+  <div class="flex text-2xl justify-around items-center h-[8vh]">
+    <div class="text-3xl cursor-default">My Portfolio</div>
+    <ion-icon name="menu" class="hamburger-icon absolute right-14 text-5xl cursor-pointer" onclick="toggleMenu(this)"></ion-icon>
+    <div></div>
+    <div class="mobile-links bg-white px-[100%] py-[50%] text-2xl opacity-0 transition duration-300 ease-in-out absolute top-14 text-center pointer-events-none">
+      <li class="list-none my-10 no-underline"><a href="#about" class="menu-link cursor-pointer">About</a></li>
+      <li class="list-none my-10 no-underline"><a href="#experience" class="menu-link cursor-pointer">Experience</a></li>
+      <li class="list-none my-10 no-underline"><a href="#projects" class="menu-link cursor-pointer">Projects</a></li>
+      <li class="list-none my-10 no-underline"><a href="#contact" class="menu-link cursor-pointer">Contact</a></li>
+    </div>
+  </div>
+</nav>
+
+
+
+<section id="profile" class="my-40">
+  <div class="flex flex-col lg:flex-row justify-center mt-10">
+
+    <div class="flex justify-center lg:mr-32 drop-shadow-2xl order-1 lg:order-none">
+      <img src="../assets/profilepic.png" alt="Avatar" class="h-[400px] lg:h-[700px]">
+    </div>
+    <div class="lg:mt-36 order-2 lg:order-none">
+      <p class="flex justify-center text-3xl mb-5 text-gray-500">
+        Hello, I'm
+      </p>
+      <h1 class="flex justify-center text-5xl mb-5 font-bold">Thodoris Tsironis</h1>
+      <p class="flex justify-center text-2xl mb-7 text-gray-500">Frontend Developer</p>
+      <div class="flex justify-center my-3">
+        <button class="mx-1 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-600 hover:border-blue-500 rounded-2xl" onclick="window.open('../assets/ThodorisTsironisCV.pdf')">Download CV</button>
+        <button class="mx-1 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-600 hover:border-blue-500 rounded-2xl" onclick="location.href = '#contact' ">Contact me</button>
+      </div>
+      
+      <div class="icons text-3xl flex justify-center">
+        <a href="https://www.linkedin.com/in/thodoris-tsironis-173b1b24a" target="_blank">
+          <ion-icon class="my-3 mx-1 cursor-pointer hover:opacity-50" name="logo-linkedin"></ion-icon>
+        </a>
+        <a href="https://github.com/tsiro66" target="_blank">
+          <ion-icon class="my-3 mx-1 cursor-pointer hover:opacity-50" name="logo-github"></ion-icon>
+        </a>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+    <section id="about" class="my-52">
+      <div class="flex flex-col items-center">
+        <p class="flex text-2xl text-gray-500 mt-36">Get To Know More</p>
+        <h1 class="flex text-5xl font-bold">About Me</h1>
+      </div>
+      <div class="flex my-20 lg:mx-32">
+        <img src="../assets/aboutme.png" alt="About me" class="rounded-3xl w-[80vh] h-[40vh] hidden 2xl:block my-24">
+        <div class="flex flex-wrap justify-center mx-10 text-center">
+          <div class="lg:flex mt-16">
+            <div class="border-2 border-gray-400 rounded-3xl mx-5 w-96 py-5 h-44 my-5">
+              <ion-icon name="ribbon-outline" class="text-3xl text-blue-500"></ion-icon>
+              <p class="text-2xl font-bold">Work Experience</p>
+              <p>Data Engineer</p>
+              <p>6 months</p>
+            </div>
+            <div class="border-2 border-gray-400 rounded-3xl mx-5 w-96 py-5 h-44 my-5">
+              <ion-icon name="school-outline" class="text-3xl text-blue-500"></ion-icon>
+              <p class="text-2xl font-bold">Education</p>
+              <p>Bachelor of Computer Engineering</p>
+              <p>University of Peloponnese</p>
+          </div>
+          </div>
+          
+        <p class="flex mx-20 text-xl">Motivated and skilled individual with a strong passion for web development, particularly in the realm of
+          front-end technologies. Proficient in HTML, CSS, and Tailwind CSS, with a solid understanding of JavaScript,
+          TypeScript, and SQL. Currently nearing completion of studies, with only the thesis remaining, which entails
+          the development of a website utilizing Next.js and Tailwind CSS. 
+          </p>
+        </div>
+        
+            
+      </div>
+    </section>
+
+    <section id="experience" class="my-52">
+      <div class="flex flex-col items-center mb-20">
+        <p class="flex text-2xl text-gray-500 mt-52">Explore My</p>
+        <h1 class="flex text-5xl font-bold">Experience</h1>
+      </div>
+      <div class="flex justify-center">
+        
+        <div class="hidden lg:block mx-20 my-14">
+          <div class="flex justify-center">
+            <div class="flex rounded-3xl border-2 border-gray-400">
+  
+              <div class="">
+  
+                <div class="flex justify-between">
+  
+                  <div class="p-10">
+                    <ion-icon name="checkmark-done-circle-outline" class="row-span-3 text-3xl text-blue-500"></ion-icon>
+                    <p class="col-span-2 text-xl font-bold">HTML</p>
+                    <p class="row-span-2 col-span-2 text-gray-500">Experienced</p>
+                  </div>
+                  <div class="p-10">
+                    <ion-icon name="checkmark-done-circle-outline" class="row-span-3 text-3xl text-blue-500"></ion-icon>
+                    <p class="col-span-2 text-xl font-bold">CSS</p>
+                    <p class="row-span-2 col-span-2 text-gray-500">Experienced</p>
+                  </div>
+                  <div class="p-10">
+                    <ion-icon name="checkmark-done-circle-outline" class="row-span-3 text-3xl text-blue-500"></ion-icon>
+                    <p class="col-span-2 text-xl font-bold">SQL</p>
+                    <p class="row-span-2 col-span-2 text-gray-500">Experienced</p>
+                  </div>
+                  <div class="p-10">
+                    <ion-icon name="checkmark-done-circle-outline" class="row-span-3 text-3xl text-blue-500"></ion-icon>
+                    <p class="col-span-2 text-xl font-bold">Java</p>
+                    <p class="row-span-2 col-span-2 text-gray-500">Intermediate</p>
+                  </div>
+  
+                </div>
+  
+                <div class="flex justify-between">
+  
+                  <div class="p-10">
+                    <ion-icon name="checkmark-done-circle-outline" class="row-span-3 text-3xl text-blue-500"></ion-icon>
+                    <p class="col-span-2 text-xl font-bold">Tailwind CSS</p>
+                    <p class="row-span-2 col-span-2 text-gray-500">Intermediate</p>
+                  </div>
+                  <div class="p-10">
+                    <ion-icon name="checkmark-done-circle-outline" class="row-span-3 text-3xl text-blue-500"></ion-icon>
+                    <p class="col-span-2 text-xl font-bold">Javascript</p>
+                    <p class="row-span-2 col-span-2 text-gray-500">Experienced</p>
+                  </div>
+                  <div class="p-10">
+                    <ion-icon name="checkmark-done-circle-outline" class="row-span-3 text-3xl text-blue-500"></ion-icon>
+                    <p class="col-span-2 text-xl font-bold">Typescript</p>
+                    <p class="row-span-2 col-span-2 text-gray-500">Intermediate</p>
+                  </div>
+                  <div class="p-10">
+                    <ion-icon name="checkmark-done-circle-outline" class="row-span-3 text-3xl text-blue-500"></ion-icon>
+                    <p class="col-span-2 text-xl font-bold">Python</p>
+                    <p class="row-span-2 col-span-2 text-gray-500">Basic</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+      <img src="../assets/experience.png" alt="About me" class="rounded-3xl w-[80vh] hidden 2xl:block">
+      </div>
+ 
+ 
+
+        <!-- mobile -->
+
+        <div class="lg:hidden">
+          <div class="flex justify-center">
+            <div class="flex rounded-3xl border-2 border-gray-400">
+  
+              <div class="">
+  
+                <div class="flex justify-between">
+  
+                  <div class="p-10">
+                    <ion-icon name="checkmark-done-circle-outline" class="row-span-3 text-3xl"></ion-icon>
+                    <p class="col-span-2 text-xl font-bold">HTML</p>
+                    <p class="row-span-2 col-span-2 text-gray-500">Experienced</p>
+                  </div>
+                  <div class="p-10">
+                    <ion-icon name="checkmark-done-circle-outline" class="row-span-3 text-3xl"></ion-icon>
+                    <p class="col-span-2 text-xl font-bold">CSS</p>
+                    <p class="row-span-2 col-span-2 text-gray-500">Experienced</p>
+                  </div>
+  
+                </div>
+
+                <div class="flex justify-between">
+                  <div class="p-10">
+                    <ion-icon name="checkmark-done-circle-outline" class="row-span-3 text-3xl"></ion-icon>
+                    <p class="col-span-2 text-xl font-bold">SQL</p>
+                    <p class="row-span-2 col-span-2 text-gray-500">Experienced</p>
+                  </div>
+                  <div class="p-10">
+                    <ion-icon name="checkmark-done-circle-outline" class="row-span-3 text-3xl"></ion-icon>
+                    <p class="col-span-2 text-xl font-bold">Java</p>
+                    <p class="row-span-2 col-span-2 text-gray-500">Experienced</p>
+                  </div>
+                </div>
+  
+                <div class="flex justify-between">
+  
+                  <div class="p-10">
+                    <ion-icon name="checkmark-done-circle-outline" class="row-span-3 text-3xl"></ion-icon>
+                    <p class="col-span-2 text-xl font-bold">Tailwind CSS</p>
+                    <p class="row-span-2 col-span-2 text-gray-500">Experienced</p>
+                  </div>
+                  <div class="p-10">
+                    <ion-icon name="checkmark-done-circle-outline" class="row-span-3 text-3xl"></ion-icon>
+                    <p class="col-span-2 text-xl font-bold">Javascript</p>
+                    <p class="row-span-2 col-span-2 text-gray-500">Experienced</p>
+                  </div>
+                  
+                </div>
+
+                <div class="flex justify-between">
+                  <div class="p-10">
+                    <ion-icon name="checkmark-done-circle-outline" class="row-span-3 text-3xl"></ion-icon>
+                    <p class="col-span-2 text-xl font-bold">Typescript</p>
+                    <p class="row-span-2 col-span-2 text-gray-500">Experienced</p>
+                  </div>
+                  <div class="p-10">
+                    <ion-icon name="checkmark-done-circle-outline" class="row-span-3 text-3xl"></ion-icon>
+                    <p class="col-span-2 text-xl font-bold">Python</p>
+                    <p class="row-span-2 col-span-2 text-gray-500">Experienced</p>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>         
+      </div>
+    </div>
+      
+    </section>
+
+    <section id="projects" class="my-52">
+      <div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+          <div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+            <div class="flex flex-col items-center mb-20">
+              <p class="flex text-2xl text-gray-500 mt-16">Browse My Recent</p>
+              <h1 class="flex text-5xl font-bold">Projects</h1>
+            </div>
+          </div>
+         
+          <div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+             
+              <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-3xl border border-gray-100 shadow  xl:p-8">
+                <img class="rounded-3xl mb-8" src="../assets/loading.png">
+                <p class="mb-4 text-3xl font-bold">Incoming...</p>
+                <div class="py-5">
+                    <button class="mx-1 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-600 hover:border-blue-500 rounded-2xl"
+                     onclick="">Github</button>
+                    <button class="mx-1 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-600 hover:border-blue-500 rounded-2xl"
+                     onclick="">Live Demo</button>
+                  </div>
+
+              </div>
+              
+              <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-3xl border border-gray-100 shadow  xl:p-8">
+                <img class="rounded-3xl mb-8" src="../assets/loading.png">
+                <p class="mb-4 text-3xl font-bold">Incoming...</p>
+                <div class="py-5">
+                    <button class="mx-1 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-600 hover:border-blue-500 rounded-2xl"
+                     onclick="">Github</button>
+                    <button class="mx-1 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-600 hover:border-blue-500 rounded-2xl"
+                     onclick="">Live Demo</button>
+                  </div>
+
+              </div>
+             
+             <div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-3xl border border-gray-100 shadow  xl:p-8">
+              <img class="rounded-3xl mb-8" src="../assets/loading.png">
+              <p class="mb-4 text-3xl font-bold">Incoming...</p>
+              <div class="py-5">
+                  <button class="mx-1 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-600 hover:border-blue-500 rounded-2xl"
+                   onclick="">Github</button>
+                  <button class="mx-1 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-600 hover:border-blue-500 rounded-2xl"
+                   onclick="">Live Demo</button>
+                </div>
+
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section id="contact" class="my-32">
+      
+      <div class="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
+        <div class="flex flex-col items-center mb-20">
+          <p class="flex text-2xl text-gray-500 mt-32">Get in Touch</p>
+          <h1 class="flex text-5xl font-bold">Contact Me</h1>
+        </div>
+        <form action="https://formsubmit.co/tsiro.thodoris@gmail.com" method="POST" class="space-y-8">
+            <div>
+                <label for="email" class="block mb-2 text-sm font-medium text-gray-900">Your email</label>
+                <input name="email" type="email" id="email" class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg 
+                focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" placeholder="name@something.com" required>
+            </div>
+            <div>
+                <label for="subject" class="block mb-2 text-sm font-medium text-gray-900">Subject</label>
+                <input name="text" type="text" id="subject" class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm 
+                focus:ring-blue-500 focus:border-blue-500" placeholder="Let me know how I can help you" required>
+            </div>
+            <div class="sm:col-span-2">
+                <label for="message" class="block mb-2 text-sm font-medium text-gray-900">Your message</label>
+                <textarea name="message" id="message" rows="6" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border 
+                border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Leave a comment..."></textarea>
+            </div>
+            <div class="flex justify-center">
+              <button class="mx-1 bg-blue-500 hover:bg-blue-400 text-white font-bold py-2 px-4 border-b-4 border-blue-600 hover:border-blue-500 rounded-2xl" onclick="">Send Message</button>
+
+            </div>
+        </form>
+    </div>
+    </section>
+
+    <footer>
+      <div class="flex justify-center pb-5 text-gray-500 tracking-wide">
+        <p>Copyright &#169; 2024 Thodoris Tsironis. All Rights Reserved.</p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
+
+
+
+<!-- Problems:
+  1.  Fix Mobile Navbar-->
