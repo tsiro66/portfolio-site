@@ -1001,6 +1001,11 @@ html {
   padding-bottom: 60%;
 }
 
+.py-\[55\%\]{
+  padding-top: 55%;
+  padding-bottom: 55%;
+}
+
 .pb-5{
   padding-bottom: 1.25rem;
 }
@@ -1091,6 +1096,10 @@ html {
 
 .opacity-0{
   opacity: 0;
+}
+
+.opacity-100{
+  opacity: 1;
 }
 
 .shadow{

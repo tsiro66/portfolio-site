@@ -9,23 +9,21 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function toggleMenu(icon) {
   const menu = document.querySelector(".mobile-links");
-  const links = document.querySelectorAll(".mobile-links a");
+  const body = document.body;
 
   if (menu.classList.contains("opacity-0")) {
     // Menu is closed
     menu.classList.remove("opacity-0");
+    menu.classList.add("opacity-100"); // To ensure visibility
     icon.setAttribute("name", "close");
-    // Enable pointer events for each link
-    links.forEach((link) => {
-      link.style.pointerEvents = "auto";
-    });
+    body.classList.add("disable-pointer-events"); // Disable pointer events
+    menu.style.pointerEvents = "auto"; // Allow pointer events on menu
   } else {
     // Menu is open
     menu.classList.add("opacity-0");
+    menu.classList.remove("opacity-100");
     icon.setAttribute("name", "menu");
-    // Disable pointer events for each link
-    links.forEach((link) => {
-      link.style.pointerEvents = "none";
-    });
+    body.classList.remove("disable-pointer-events"); // Enable pointer events
+    menu.style.pointerEvents = "none"; // Disable pointer events on menu
   }
 }

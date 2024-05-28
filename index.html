@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portofolio</title>
     <link rel="stylesheet" href="style.css" />
+    <style>
+      .disable-pointer-events {
+        pointer-events: none;
+      }
+      .hamburger-icon {
+        pointer-events: auto;
+      }
+    </style>
   </head>
   <body class="font-body scroll-smooth">
 
@@ -45,10 +53,11 @@
     <!-- mobile navbar -->
     <nav class="lg:hidden select-none border-b border-white shadow-lg fixed top-0 w-full bg-white z-50">
       <div class="flex text-xl justify-around items-center h-[8vh]">
-        <div class="text-2xl cursor-default">My Portfolio</div>
+        <div class="text-2xl cursor-default"><a href="#top">My Portfolio</a></div>
         <ion-icon name="menu" class="hamburger-icon absolute right-14 text-4xl cursor-pointer" onclick="toggleMenu(this)"></ion-icon>
         <div></div>
-        <div class="mobile-links bg-white px-[100%] py-[60%] text-xl opacity-0 transition duration-300 ease-in-out absolute top-14 text-center pointer-events-none">
+        <div class="mobile-links bg-white px-[100%] py-[55%] text-xl opacity-0 transition duration-300 ease-in-out absolute top-14 text-center pointer-events-none">
+          <li class="list-none my-10 no-underline"><a href="#top" class="menu-link cursor-pointer">Profile</a></li>
           <li class="list-none my-10 no-underline"><a href="#about" class="menu-link cursor-pointer">About</a></li>
           <li class="list-none my-10 no-underline"><a href="#experience" class="menu-link cursor-pointer">Experience</a></li>
           <li class="list-none my-10 no-underline"><a href="#projects" class="menu-link cursor-pointer">Projects</a></li>
